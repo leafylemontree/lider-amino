@@ -22,7 +22,7 @@
 
 .topInfo p{
   color: white;
-  font-size: 28px;
+  font-size: 24px;
   width: 90%;
   margin: 24px 5%;
   text-align: center;
@@ -69,6 +69,7 @@ button.search{
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 60px;
 }
 
 button.search img{
@@ -105,7 +106,7 @@ button.search img{
 
 .topicElement{
   position: relative;
-  margin: 28px 42px;
+  margin: 24px 48px;
   border-color: white;
   border-width: 2px;
   border-style: solid;
@@ -115,8 +116,8 @@ button.search img{
 
 .topicElement img{
   position: relative;
-  width: 70%;
-  margin: 8px 15%;
+  width: 50%;
+  margin: 8px 25%;
 }
 
 .topicElement h3{
@@ -136,7 +137,7 @@ button.search img{
 
 .contact {
   position: relative;
-  margin: 64px 4px;
+  margin: 84px 4px;
   padding: 0px 2px;
   border-radius: 4px;
   color: white;
