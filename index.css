@@ -13,18 +13,18 @@
   color: white;
   width: 100%;
   text-align: center;
-  margin: 42px 0px;
+  margin: 72px 0px;
   letter-spacing: 7px;
-  font-size: 36px;
+  font-size: 80px;
   font-weight: lighter;
 
 }
 
 .topInfo p{
   color: white;
-  font-size: 13px;
+  font-size: 28px;
   width: 90%;
-  margin: 8px 5%;
+  margin: 24px 5%;
   text-align: center;
   font-weight: 400;
 }
@@ -38,9 +38,9 @@
 #searchBar{
   position: relative;
   width: 92%;
-  margin: 42px 4%;
+  margin: 88px 4%;
   display: grid;
-  grid-template-columns: 80% 20%;
+  grid-template-columns: 85% 15%;
 
   border-color: white;
   border-width: 2px;
@@ -51,7 +51,7 @@
 
 .search {
   position: relative;
-  margin: 8px 4px;
+  margin: 12px 12px;
   padding: 6px 2px;
   border-radius: 4px;
   background-color: #ffffff7f;
@@ -80,9 +80,8 @@ button.search img{
 #topics{
   position: relative;
   width: 92%;
-  margin: 8px 4%;
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
+  margin: 20px 4%;
+
 
   border-color: white;
   border-width: 2px;
@@ -90,9 +89,23 @@ button.search img{
   border-radius: 8px;
 }
 
+#topics h4{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 28px;
+  margin: 14px 0px;
+}
+
+.topicsBar{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
 .topicElement{
   position: relative;
-  margin: 16px;
+  margin: 28px 42px;
   border-color: white;
   border-width: 2px;
   border-style: solid;
@@ -109,7 +122,7 @@ button.search img{
 .topicElement h3{
   text-align: center;
   color: white;
-  font-size: 10px;
+  font-size: 20px;
   margin: 0px 0px 8px 0px;
 }
 
@@ -123,14 +136,14 @@ button.search img{
 
 .contact {
   position: relative;
-  margin: 28px 4px;
+  margin: 64px 4px;
   padding: 0px 2px;
   border-radius: 4px;
   color: white;
 }
 
 .contact h4 {
-  font-size: 10px;
+  font-size: 20px;
   width: 100%;
   text-align: center;
 }
@@ -142,5 +155,5 @@ button.search img{
   text-align: center;
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  font-size: 10px;
+  font-size: 20px;
 }

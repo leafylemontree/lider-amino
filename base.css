@@ -34,6 +34,7 @@ body {
   animation-iteration-count: 1;
   font-family: 'Source Sans Pro', sans-serif;
   background: linear-gradient(17deg, var(--bg-col-1), var(--bg-col-2));
+  overflow: hidden;
 }
 
 a {
