@@ -94,8 +94,8 @@ img.rightImage {
 
 .topicsList a h4 {
   grid-column: 2;
-  font-weight: 200;
-  font-size: 37px;
+  font-weight: 400;
+  font-size: 44px;
   margin: 20px 0px 0px 0px;
 }
 
@@ -103,7 +103,7 @@ img.rightImage {
   grid-column: 2;
   width: 100%;
   margin: 0px 0px 16px 0px;
-  font-size: 20px;
+  font-size: 28px;
 }
 
 .tema {
