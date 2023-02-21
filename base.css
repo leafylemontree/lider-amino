@@ -2,13 +2,17 @@
   /* margin: 0px; */
   border: 0px;
   padding: 0px;
+}
 
+html {
+  scroll-behavior: smooth;
 }
 
 :root{
   --bg-init  : #94757e;
   --bg-col-1 : #8a42ec;
   --bg-col-2 : #dd9f88;
+  --bg-col-3 : #333842;
 
   --link-def : #ffffff;
   --link-vis : #000000;
@@ -16,14 +20,8 @@
 }
 
 @keyframes bg-col {
-  0% {
-    /* background: linear-gradient(17deg, var(--bg-init), var(--bg-init)); */
-    opacity: 0%;
-  }
-  100% {
-    /* background: linear-gradient(17deg, var(--bg-col-1), var(--bg-col-2)); */
-    opacity: 100%;
-  }
+  0%   {  opacity: 0%;   }
+  100% {  opacity: 100%; }
 }
 
 
@@ -58,4 +56,152 @@ a:active {
 
 a:hover {
   color: var(--link-hover);
+}
+
+button{
+  background-color: #00000000;
+  color: #00000000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+
+.menu{
+  margin: 0px;
+  position: fixed;
+}
+
+#menuToggle {
+  position: fixed;
+  top: 0px;
+  height: 72px;
+  margin: 16px;
+}
+
+#menuToggle img{
+  height: 72px;
+}
+
+#menuBar {
+  background-color: var(--bg-col-3);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 100%;
+  color: white;
+  transition: width 1s ease;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.blurable {
+  transition: opacity 1s ease;
+  transition: filter 1s ease;
+}
+
+#menuBar div{
+  position: relative;
+  top: 108px;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.menuLinkList {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuLinkList img{
+    width: 80%;
+    margin: 0px 10%;
+}
+
+.menuLinkList h2{
+    font-weight: 200;
+}
+
+.menuLinkList a {
+  height: 56px;
+  padding: 8px;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  margin: 12px 40px;
+  overflow: hidden;
+}
+
+.menuLinkList a img {
+  height: 56px;
+}
+
+.menuLinkList p{
+    font-weight: 400;
+    color: white;
+    font-size: 40px;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+
+.littleInfo {
+  font-size: 28px;
+}
+
+.textSeparator {
+  width: 80%;
+  height: 2px;
+  margin: 8px 10%;
+  background-color: white;
+}
+
+.separatorSmall{
+  height: 108px;
+}
+
+
+.separatorMedium{
+  height: 192px;
+}
+
+.separatorLarge{
+  height: 256px;
+}
+
+.contact {
+  position: relative;
+  margin: 196px 4px 48px 4px;
+  padding: 0px 2px;
+  border-radius: 4px;
+  color: white;
+}
+
+.contact h4 {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+#links {
+  position: relative;
+  width: 96%;
+  margin: 4px 2%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  font-size: 28px;
 }

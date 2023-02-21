@@ -1,0 +1,138 @@
+h2 {
+  width: 100%;
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  letter-spacing: 6px;
+  margin: 120px 0px 24px 0px;
+
+}
+
+.typeSelector {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  font-size: 28px;
+  color: white;
+  margin: 48px 0px;
+}
+
+.typeSelector a {
+  position: relative;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 8px;
+  margin: 8px 32px;
+}
+
+.typeSelector a img {
+  position: relative;
+  height: 56px;
+  margin: 8px 12px;
+}
+
+.typeSelector a p {
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+h3 {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 200;
+  margin: 56px 0px 28px 0px;
+}
+
+
+
+
+.topicsList {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 48px 5%;
+  color: white;
+}
+
+.topicsList a {
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 8px;
+  margin: 16px 0px;
+  min-height: 144px;
+
+  display: grid;
+  grid-template-columns: 128px auto 84px;
+  grid-template-rows: 72px auto;
+}
+
+img.leftImage {
+  grid-column: 1 / 2;
+  height: 96px;
+  margin: 32px 16px;
+}
+
+img.rightImage {
+  grid-column: 3;
+  grid-row: 1 / 1;
+  height: 56px;
+  margin: 48px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topicsList a h4 {
+  grid-column: 2;
+  font-weight: 200;
+  font-size: 37px;
+  margin: 20px 0px 0px 0px;
+}
+
+.topicsList a p {
+  grid-column: 2;
+  width: 100%;
+  margin: 0px 0px 16px 0px;
+  font-size: 20px;
+}
+
+.tema {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.tema a{
+  min-height: 108px;
+}
+
+.tema a:nth-child(even){
+    margin-left: 16px;
+}
+
+.tema a:nth-child(odd){
+    margin-right: 16px;
+}
+
+.tema a h4 {
+  grid-column: 1 / 2;
+  margin: 16px;
+  display: flex;
+  align-content: center;
+  font-size: 32px;
+  min-height: 64px;
+  font-weight: 400;
+}
+
+.tema a img.rightImage {
+  margin: 24px 12px;
+}

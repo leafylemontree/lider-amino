@@ -13,18 +13,18 @@
   color: white;
   width: 100%;
   text-align: center;
-  margin: 72px 0px;
+  margin: 72px 0px 16px 0px;
   letter-spacing: 7px;
-  font-size: 80px;
+  font-size: 108px;
   font-weight: lighter;
 
 }
 
 .topInfo p{
   color: white;
-  font-size: 24px;
-  width: 90%;
-  margin: 24px 5%;
+  font-size: 32px;
+  width: 80%;
+  margin: 64px 10% 8px 10%;
   text-align: center;
   font-weight: 400;
 }
@@ -46,35 +46,32 @@
   border-width: 2px;
   border-style: solid;
   border-radius: 8px;
-
 }
 
 .search {
   position: relative;
-  margin: 12px 12px;
-  padding: 6px 2px;
+  margin: 18px 18px;
+  padding: 6px 12px;
   border-radius: 4px;
-  background-color: #ffffff7f;
+  background-color: #ffffff5f;
 
   border-color: white;
   border-width: 2px;
   border-style: solid;
   border-radius: 8px;
+
+  font-size: 48px;
+  color: white;
 }
 
 button.search{
   background-color: #00000000;
-  color: #00000000;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 60px;
+  height: 96px;
 }
 
 button.search img{
   position: relative;
-  width: 28px;
+  width: 48px;
 
 }
 
@@ -95,7 +92,7 @@ button.search img{
   width: 100%;
   text-align: center;
   color: white;
-  font-size: 28px;
+  font-size: 36px;
   margin: 14px 0px;
 }
 
@@ -106,12 +103,16 @@ button.search img{
 
 .topicElement{
   position: relative;
-  margin: 24px 48px;
+  margin: 24px 40px;
   border-color: white;
   border-width: 2px;
   border-style: solid;
   border-radius: 8px;
   transition: border-color 0.4s ease;
+
+  display: flex;
+  flex-direction: column;
+  height: 176px;
 }
 
 .topicElement img{
@@ -123,38 +124,11 @@ button.search img{
 .topicElement h3{
   text-align: center;
   color: white;
-  font-size: 20px;
+  font-size: 24px;
   margin: 0px 0px 8px 0px;
 }
 
 
 .topicElement:hover{
     border-color: var(--link-hover);
-}
-
-
-
-
-.contact {
-  position: relative;
-  margin: 84px 4px;
-  padding: 0px 2px;
-  border-radius: 4px;
-  color: white;
-}
-
-.contact h4 {
-  font-size: 20px;
-  width: 100%;
-  text-align: center;
-}
-
-#links {
-  position: relative;
-  width: 96%;
-  margin: 4px 2%;
-  text-align: center;
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  font-size: 20px;
 }
