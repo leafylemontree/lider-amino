@@ -78,7 +78,7 @@ h3 {
 
 img.leftImage {
   grid-column: 1 / 2;
-  height: 96px;
+  width: 96px;
   margin: 32px 16px;
 }
 
