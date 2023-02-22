@@ -32,7 +32,7 @@ body {
   animation-iteration-count: 1;
   font-family: 'Source Sans Pro', sans-serif;
   background: linear-gradient(135deg, var(--bg-col-1), var(--bg-col-2));
-
+  margin: 72px 0px;
 }
 
 a {
@@ -82,7 +82,7 @@ button:hover {
   position: fixed;
   top: 0px;
   height: 72px;
-  margin: 16px;
+  margin: 32px;
 }
 
 #menuToggle img{
@@ -204,4 +204,8 @@ button:hover {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   font-size: 28px;
+}
+
+.hidden {
+  display: none;
 }

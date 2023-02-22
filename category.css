@@ -1,0 +1,185 @@
+.topInfo{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#logoImage{
+  width: 50%;
+  padding-left: 25%;
+}
+
+.topInfo h1{
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin: 40px 0px 16px 0px;
+  letter-spacing: 3px;
+  font-size: 60px;
+  font-weight: lighter;
+
+}
+
+.topInfo p{
+  color: white;
+  font-size: 32px;
+  width: 80%;
+  margin: 24px 10% 8px 10%;
+  text-align: center;
+  font-weight: 400;
+}
+
+.information{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.searchPart {
+  position: relative;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 8px;
+  width: 92%;
+  margin: 48px 4%;
+}
+
+#searchBar{
+  position: relative;
+  display: grid;
+  grid-template-columns: 85% 15%;
+}
+
+.search {
+  position: relative;
+  margin: 18px 18px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: #ffffff5f;
+
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 8px;
+
+  font-size: 48px;
+  color: white;
+}
+
+button.search{
+  background-color: #00000000;
+  height: 96px;
+}
+
+button.search img{
+  position: relative;
+  width: 48px;
+}
+
+
+
+
+#keywordSelector {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin: 24px 5%;
+}
+
+#keywordSelector button {
+  position: relative;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 20px;
+
+  color: white;
+  font-size: 28px;
+  margin: 8px 12px;
+  padding: 4px 12px;
+}
+
+.btn-pressed {
+  background-color: #ffffff5f;
+}
+
+
+
+
+.blogList {
+  background-color: var(--bg-col-3);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 72px 0px;
+  padding: 0px 0px 128px 0px;
+}
+
+.blogList h3 {
+  color: white;
+  text-align: center;
+  font-size: 48px;
+  letter-spacing: 2px;
+  font-weight: 200;
+  margin: 72px 0px;
+}
+
+.blogList p{
+  margin: 6px 5% 6px 15%;
+  font-size: 28px;
+  color: white;
+  font-weight: 200;
+}
+
+.blogList P::before{
+  content: "• ";
+}
+
+.blogList a {
+  text-decoration: underline;
+}
+
+.blogList h4 {
+  color: white;
+  font-size: 32px;
+  margin: 24px 0px 2px 56px;
+}
+
+div.separatorBlog {
+  background-color: white;
+  width: calc(100% - 96px);
+  margin: 2px 0px 12px 48px;
+  height: 2px;
+}
+
+
+
+
+
+
+.devDebug {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: black;
+  padding: 16px 0px;
+}
+
+.devDebug button{
+  color: white;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 20px;
+  margin: 0px 48px;
+  font-size: 24px;
+}
+
+.devDebug p{
+  color: white;
+  font-size: 32px;
+}

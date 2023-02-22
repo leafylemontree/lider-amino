@@ -34,7 +34,7 @@ const default_menu = `
 `
 
 const default_contact = `
-      <h4>Creado por: Leafy. Dev build: 0.0.5</h4>
+      <h4>Creado por: Leafy. Dev build: 0.0.6</h4>
       <div id="links">
         <a href="https://aminoapps.com/c/lider-espanol">Líder Amino</a>
         <a href="https://www.youtube.com/@aminoapps">Youtube</a>
@@ -42,7 +42,6 @@ const default_contact = `
       </div>
 `
 
-console.log(default_menu)
 document.querySelector(".menuContainer").innerHTML += default_menu;
 document.querySelector(".contact").innerHTML += default_contact;
 
