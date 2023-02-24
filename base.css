@@ -1,5 +1,4 @@
 * {
-  /* margin: 0px; */
   border: 0px;
   padding: 0px;
 }
@@ -14,6 +13,7 @@ html {
   --bg-col-2 : #dd9f88;
   --bg-col-3 : #333842;
   --bg-col-4 : #444A59;
+  --bg-col-5 : #0000004D;
 
   --link-def : #ffffff;
   --link-vis : #000000;
@@ -126,6 +126,7 @@ button:hover {
 .menuLinkList img{
     width: 80%;
     margin: 0px 10%;
+    max-width: 336px;
 }
 
 .menuLinkList h2{
@@ -253,6 +254,7 @@ button:hover {
 
 #logoImage{
   max-width: 320px;
+  max-height: 320px;
 }
 
 .topInfo h1{
@@ -278,4 +280,8 @@ button:hover {
     position: relative;
     display: flex;
     flex-direction: column;
+}
+
+.lightlyDark{
+  background-color: var(--bg-col-5);
 }
