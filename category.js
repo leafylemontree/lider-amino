@@ -1,12 +1,21 @@
-let category    = parseInt(document.querySelector("p.ct").textContent, 10);
+let category      = parseInt(document.querySelector("p.ct").textContent, 10);
 const kwContainer = document.querySelector("#keywordSelector");
 
 const createButton = (dom, text, i) => {
   dom.innerHTML += `<button class="kw-${i} sc-btn">${text}</button>\n`
 }
 
+const getCategory = ()=>{
+  category    = parseInt(document.querySelector("p.ct").textContent, 10);
+  console.log(category)
+}
+
+let allBlogs = [[], 0]
+
 function refreshKW(){
+  getCategory();
   kwContainer.innerHTML = ""
+  if(category == -1){ return; };
   for(let i = 0; i < keywords[category].length; i++){
     createButton(kwContainer, keywords[category][i], i);
   };
@@ -22,10 +31,12 @@ kwButtons.addEventListener("click", ()=>{
 
 
 const prepareSearch = ()=>{
-  button = document.querySelectorAll(".btn-pressed")
-  let kwList = []
-  for(let j = 0; j < button.length; j++){
-    kwList.push(button[j].classList[0].slice(3))
+  if (category != -1){
+    button = document.querySelectorAll(".btn-pressed")
+    let kwList = []
+    for(let j = 0; j < button.length; j++){
+      kwList.push(button[j].classList[0].slice(3))
+    };
   };
 
   const prompt = document.querySelector("input.search").value
@@ -50,9 +61,12 @@ document.addEventListener("keydown", ()=>{
 
 // Blogs
 
+
 const blogList = document.querySelector(".blogList")
 
 function refreshBlogs(searchQuery, keywords){
+    getCategory();
+
     let searchQueryUpper = null
     if (!!searchQuery){
       searchQueryUpper = searchQuery.toUpperCase()
@@ -60,11 +74,20 @@ function refreshBlogs(searchQuery, keywords){
     } else {
       blogList.innerHTML = `<h3>Listado de blogs</h3>`
     }
-    newHTML = []
 
-    for(let i = 0; i < blogs[category].length; i++){
-      let blog    = blogs[category][i][1];
-      let tags    = blogs[category][i][0];
+    newHTML = []
+    let aBlogs = []
+
+    if(category == -1){
+      aBlogs = allBlogs;
+      category     = 0;
+    } else {
+      aBlogs = blogs;
+    };
+
+    for(let i = 0; i < aBlogs[category].length; i++){
+      let blog    = aBlogs[category][i][1];
+      let tags    = aBlogs[category][i][0];
 
       if (!!searchQuery){
         let blogContentUpper = blog.toUpperCase().replace(/\((http).*\)|[%!¡?¿\[\]\(\)<>]/gi, "")
@@ -74,24 +97,26 @@ function refreshBlogs(searchQuery, keywords){
       };
 
       let tArray  = blog.split(/[%[)]/g)
-      let outTxt  = []
+      let outTxt  = ""
+      let link = "";
+      let text = "";
 
       for(let j = 0; j < tArray.length; j++){
 
         if( tArray[j].match(/[%\]()]/)) {
           let elem = tArray[j].split(/[%\](]/g);
-          let text = elem[0]
-          let link = elem[2]
-          outTxt.push(`<a href='${link}'>${text}</a>`)
+          text = elem[0]
+          link = elem[2]
+          outTxt += text;
         }
-        else{ outTxt.push(tArray[j]) };
+        else{ outTxt += tArray[j] };
       };
-      newHTML.push(outTxt.join(" "))
+      newHTML.push([link, outTxt])
     };
 
     newHTML.sort((a,b)=>{
       function separate(s){
-        return s.replace(/<(?:.*?)>|[%!¡?¿\[\]\(\)<>]/g, '').trim()
+        return s[1].replace(/<(?:.*?)>|[%!¡?¿\[\]\(\)<>]/g, '').trim()
       };
       return separate(a).localeCompare(separate(b))
 
@@ -99,17 +124,40 @@ function refreshBlogs(searchQuery, keywords){
 
     oldChar = ''
     for(let i = 0; i < newHTML.length; i++){
-        let char = newHTML[i].replace(/<(?:.*?)>|[%!¡?¿\[\]\(\)<>]/g, '').trim()[0];
+        let char = newHTML[i][1].replace(/<(?:.*?)>|[%!¡?¿\[\]\(\)<>]/g, '').trim()[0];
         if (char != oldChar){
             blogList.innerHTML += `<h4>${char}</h4>\n<div class="separatorBlog"></div>\n`;
         };
-        blogList.innerHTML += `<p>${newHTML[i]}</p>\n`
+        link = newHTML[i][0]
+        text = newHTML[i][1]
+        if(searchQuery){
+          let rgx = new RegExp(searchQuery, "gi")
+          text = text.replace(rgx, `<u class="queryHighlight">${searchQuery}</u>`)
+        };
+        blogList.innerHTML += `<p><a href="${link}">${text}</a></p>\n`
         oldChar = char;
     };
 }
 
-refreshBlogs(null, null)
 
+
+getCategory()
+if(category == -1){
+  const uri   = (location.href.split("?"))
+  let query   = null;
+  if (uri.length > 1){
+    query = decodeURI(uri[1])
+    document.querySelector("input.search").value = query;
+  };
+  refreshBlogs(query, null)
+
+  for(let i = 0; i < blogs.length; i++){
+      Array.prototype.push.apply(allBlogs[0], blogs[i]);
+  };
+  refreshBlogs(query, null)
+} else {
+  refreshBlogs(null, null)
+};
 
 
 

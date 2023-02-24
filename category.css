@@ -91,10 +91,13 @@ button.search img{
 }
 
 .blogList p{
-  margin: 6px 5% 6px 15%;
+  margin: 8px 5% 8px 15%;
   font-size: 38px;
   color: white;
   font-weight: 200;
+  line-height: 48px;
+  align-content: center;
+  justify-content: center;
 }
 
 .blogList P::before{
@@ -111,11 +114,6 @@ button.search img{
   margin: 24px 0px 2px 56px;
 }
 
-.blogList u {
-  background-color: yellow;
-  color: black;
-}
-
 div.separatorBlog {
   background-color: white;
   width: calc(100% - 96px);
@@ -123,6 +121,12 @@ div.separatorBlog {
   height: 2px;
 }
 
+u.queryHighlight{
+  background-color: var(--bg-col-2);
+  color: black;
+  font-weight: 400;
+  padding: 0px;
+}
 
 
 

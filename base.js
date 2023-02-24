@@ -20,7 +20,7 @@ const default_menu = `
               <img src="assets/recent.svg" />
               <p>Novedades</p>
           </a>
-          <a>
+          <a href="search.html">
               <img src="assets/search.svg" />
               <p>Buscar</p>
           </a>
@@ -34,7 +34,7 @@ const default_menu = `
 `
 
 const default_contact = `
-      <h4>Creado por: Leafy. Dev build: 0.0.9</h4>
+      <h4>Creado por: Leafy. Dev build: 0.0.10</h4>
       <div id="links">
         <a href="https://aminoapps.com/c/lider-espanol">Líder Amino</a>
         <a href="https://www.youtube.com/@aminoapps">Youtube</a>
