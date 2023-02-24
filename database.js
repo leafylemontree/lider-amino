@@ -1,5 +1,5 @@
 const keywords = [
-    ['Usuarios', 'Staff', 'Comunidad', 'Concursos', 'Información', 'Blogs', 'VIP', 'Estética'],
+    ['Usuarios', 'Staff', 'Comunidad', 'Concursos', 'Información', 'Contenido', 'VIP', 'Estética', 'Equipo Amino', 'Chats', 'Tutoriales', 'Consejos'],
     ['ACM', 'Herramientas', 'Comunidad'],
     ['Crear', 'Listado', 'Perzonaliación', 'Módulos'],
     ['Amino Coins', 'Membresía', 'Bonos'],
@@ -16,76 +16,196 @@ const keywords = [
 
 const blogs = [
     [
-        [[], "¡Abrir páginas con [navegador externo](http://aminoapps.com/p/k8k01f)"],
-        [[], "[Diccionario](http://aminoapps.com/p/7xr3rt) de Amino"],
-        [[], "[Diccionario](http://aminoapps.com/p/5gyffi) de Amino DOS"],
-        [[], "[Errores](http://aminoapps.com/p/d3mhis) en los servidores de Amino"],
-        [[], "Los NDC [links](http://aminoapps.com/p/itfke4)"],
-        [[], "Tu [perfil](http://aminoapps.com/p/i9trzs) personal en Amino"],
-        [[], "[Deshabilitar](http://aminoapps.com/p/ddrs1x) tus alertas, chats y comentarios en el muro"],
-        [[], "La [barra lateral](http://aminoapps.com/p/nl9jz5) izquierda"],
-        [[], "Los [chats](http://aminoapps.com/p/6gyth5) de Amino"],
-        [[], "Aprende sobre chats [públicos](http://aminoapps.com/p/x9uv48)"],
-        [[], "Los tipos de [chats](http://aminoapps.com/p/0uzd8t)"],
-        [[], "Introducción al [AudioChat](http://aminoapps.com/p/pvqtr2)"],
-        [[], "Saca [provecho](http://aminoapps.com/p/0yhbmp) al AudioChat"],
-        [[], "La [reputación](http://aminoapps.com/p/hlbhj1)"],
-        [[], "Hacer [Wikis](http://aminoapps.com/p/pmfdk) y manejar las entradas"],
-        [[], "Crear tu propia [versión](http://aminoapps.com/p/sck1v2) de una Wiki"],
-        [[], "[Tipos](http://aminoapps.com/p/lux656) de blogs"],
-        [[], "MiniTips para [tus blogs](http://aminoapps.com/p/n10uxh)"],
-        [[], "MiniTips para [tus blogs](http://aminoapps.com/p/lhkuh8) DOS"],
-        [[], "[Consejos](http://aminoapps.com/p/diz7ih) para blogueros"],
-        [[], "Aprende a hacer [stories](http://aminoapps.com/p/wyjo9un)"],
-        [[], "Tipos de [publicaciones](http://aminoapps.com/p/tipnqs) en Amino"],
-        [[], "El [bloqueo](http://aminoapps.com/p/2nz73y) entre miembros"],
-        [[], "Ser tester [beta](http://aminoapps.com/p/6ddfwi) en Android"],
-        [[], "Introducción a las [salas de protección](http://aminoapps.com/p/ob2wgl)"],
-        [[], "Tutorial sobre las [salas de protección](http://aminoapps.com/p/bkt16j)"],
-        [[], "El [flood](http://aminoapps.com/p/1yg4qk) en Amino"],
-        [[], "Consejos para tus [blogs](http://aminoapps.com/p/hi06vz)"],
-        [[], "Desarrollando un [periódico](http://aminoapps.com/p/onhww1)"],
-        [[], "Las bases de un [buen blog](http://aminoapps.com/p/zr4snd)"],
-        [[], "Beneficiar la convivencia desde las [reglas](http://aminoapps.com/p/37t73k)"],
-        [[], "Principios del [staff óptimo](http://aminoapps.com/p/mq9883)"],
-        [[], "Ideas para [dinámicas y concursos](http://aminoapps.com/p/7tlkzf)"],
-        [[], "El [favoritismo](http://aminoapps.com/p/q3lo8p)"],
-        [[], "El [moderador ético](http://aminoapps.com/p/gtchhz)"],
-        [[], "[Consecuencias](http://aminoapps.com/p/w88qci) del abuso de poder"],
-        [[], "Organizar una comunidad [sin líder agente](http://aminoapps.com/p/ppu3nv)"],
-        [[], "Amino [global](http://aminoapps.com/p/exaupd)"],
-        [[], "Desarrollar un [concurso](http://aminoapps.com/p/fs7y84)"],
-        [[], "El [bloqueo](http://aminoapps.com/p/tb2796)"],
-        [[], "El [flood](http://aminoapps.com/p/u58fy9)"],
-        [[], "[Buscar a alguien](http://aminoapps.com/p/twbva3) en amino"],
-        [[], "Haciendo tus [blogs](http://aminoapps.com/p/chyx6g) brillar"],
-        [[], "Lidiando con usuarios [victimistas](http://aminoapps.com/p/tqpd7o4)"],
-        [[], "[Integración](http://aminoapps.com/p/zkp0fzhttp://aminoapps.com/p/zkp0fz) al staff"],
-        [[], "Trabajar en [equipo](http://aminoapps.com/p/zz57fp)"],
-        [[], "Nuevo registro del [historial](https://aminoapps.com/c/lider-espanol/page/blog/6-nuevo-registro-de-historial-te-funcionara/3bpw_tBuwepXr7Peb16JozZov7XV0gnn)"],
-        [[], "Acomodar las [normas](https://aminoapps.com/c/lider-espanol/page/blog/cuando-acomodar-las-reglas/EDdB_tPuweql3VQW27P60pNravJZm3Qx)"],
-        [[], "Requisito importante al hacer [reclutamientos](https://aminoapps.com/c/lider-espanol/page/blog/requisito-importante-y-a-veces-ignorado-en-reclutamientos/rzql_Seu0ERne7bwMzDNzPnBNDQb3GGV)"],
-        [[], "[Integración](https://aminoapps.com/c/lider-espanol/page/blog/interactuando-en-amino/B8Vw_twu5qbx5Zrk8rYwKg1EZBDv0zrB) en Amino"],
-        [[], "Utiliza tus [atribuciones](https://aminoapps.com/c/lider-espanol/page/blog/utiliza-tus-atribuciones-sabiamente/vK1W_Unu20b1Y0xGB0DkdbR4PpaeJam) sabiamente"],
-        [[], "[Reanimar](http://aminoapps.com/p/kgrox2) una comunidad"],
-        [[], "Dirección y coordinación de [grupos](http://aminoapps.com/p/gz65hh)"],
-        [[], "Como [motivar](http://aminoapps.com/p/4k9i40k) a los usuarios"],
-        [[], "¿Cómo lidiar con la [denigración](http://aminoapps.com/p/7izn0vd)?"],
-        [[], "No más [anuncios](http://aminoapps.com/p/r9uf7k) forzados"],
-        [[], "¿Quieres buenos [VIPs](http://aminoapps.com/p/rzgc3x)?"],
-        [[], "Creación de [eventos](http://aminoapps.com/p/4whhqr)"],
-        [[], "¿Cómo hacer [reclutamientos](http://aminoapps.com/p/oxd1d3)?"]
+      [['Información', 'Tutoriales'],
+      "¡Abrir páginas con [navegador externo](http://aminoapps.com/p/k8k01f)"],
+
+      [['Información'],
+      "[Diccionario](http://aminoapps.com/p/7xr3rt) de Amino"],
+
+      [['Información'],
+      "[Diccionario](http://aminoapps.com/p/5gyffi) de Amino DOS"],
+
+      [['Equipo Amino'],
+      "[Errores](http://aminoapps.com/p/d3mhis) en los servidores de Amino"],
+
+      [['Información'],
+      "Los NDC [links](http://aminoapps.com/p/itfke4)"],
+
+      [['Usuarios'],
+      "Tu [perfil](http://aminoapps.com/p/i9trzs) personal en Amino"],
+
+      [['Uusarios','Tutoriales'],
+      "[Deshabilitar](http://aminoapps.com/p/ddrs1x) tus alertas, chats y comentarios en el muro"],
+
+      [['Comunidad'],
+      "La [barra lateral](http://aminoapps.com/p/nl9jz5) izquierda"],
+
+      [['Comunidad',
+      'Chats'], "Los [chats](http://aminoapps.com/p/6gyth5) de Amino"],
+
+      [['Chats',
+      'Información', 'Tutoriales'], "Aprende sobre chats [públicos](http://aminoapps.com/p/x9uv48)"],
+
+      [['Chats',
+      'Comunidad'], "Los tipos de [chats](http://aminoapps.com/p/0uzd8t)"],
+
+      [['Chats',
+      'Tutoriales'], "Introducción al [AudioChat](http://aminoapps.com/p/pvqtr2)"],
+
+      [['Chats'],
+      "Saca [provecho](http://aminoapps.com/p/0yhbmp) al AudioChat"],
+
+      [['Uusarios'],
+      "La [reputación](http://aminoapps.com/p/hlbhj1)"],
+
+      [['Contenido'],
+      "Hacer [Wikis](http://aminoapps.com/p/pmfdk) y manejar las entradas"],
+
+      [['Contenido','Tutoriales'],
+      "Crear tu propia [versión](http://aminoapps.com/p/sck1v2) de una Wiki"],
+
+      [['Contenido'],
+      "[Tipos](http://aminoapps.com/p/lux656) de blogs"],
+
+      [['Consejos','Contenido'],
+      "MiniTips para [tus blogs](http://aminoapps.com/p/n10uxh)"],
+
+      [['Consejos',
+      'Chats'], "MiniTips para [tus blogs](http://aminoapps.com/p/lhkuh8) DOS"],
+
+      [['Consejos', 'Contenido'],
+      "[Consejos](http://aminoapps.com/p/diz7ih) para blogueros"],
+
+      [['Tutoriales', 'Contenido'],
+      "Aprende a hacer [stories](http://aminoapps.com/p/wyjo9un)"],
+
+      [['Contenido'],
+      "Tipos de [publicaciones](http://aminoapps.com/p/tipnqs) en Amino"],
+
+      [['Usuarios', 'Consejos'],
+      "El [bloqueo](http://aminoapps.com/p/2nz73y) entre miembros"],
+
+      [['Usuarios'],
+      "Ser tester [beta](http://aminoapps.com/p/6ddfwi) en Android"],
+
+      [['Tutoriales'],
+      "Introducción a las [salas de protección](http://aminoapps.com/p/ob2wgl)"],
+
+      [['Tutoriales'],
+      "Tutorial sobre las [salas de protección](http://aminoapps.com/p/bkt16j)"],
+
+      [['Usuarios'],
+      "El [flood](http://aminoapps.com/p/1yg4qk) en Amino"],
+
+      [['Contenido',
+      'Consejos'], "Consejos para tus [blogs](http://aminoapps.com/p/hi06vz)"],
+
+      [['Contenido'],
+      "Desarrollando un [periódico](http://aminoapps.com/p/onhww1)"],
+
+      [['Contenido','Consejos'],
+      "Las bases de un [buen blog](http://aminoapps.com/p/zr4snd)"],
+
+      [[],
+      "Beneficiar la convivencia desde las [reglas](http://aminoapps.com/p/37t73k)"],
+
+
+      [[],
+      "Principios del [staff óptimo](http://aminoapps.com/p/mq9883)"],
+
+
+      [[],
+      "Ideas para [dinámicas y concursos](http://aminoapps.com/p/7tlkzf)"],
+
+      [['Usuarios'],
+      "El [favoritismo](http://aminoapps.com/p/q3lo8p)"],
+
+      [[],
+      "El [moderador ético](http://aminoapps.com/p/gtchhz)"],
+
+      [['Usuarios'],
+      "[Consecuencias](http://aminoapps.com/p/w88qci) del abuso de poder"],
+
+      [['Tutoriales'],
+      "Organizar una comunidad [sin líder agente](http://aminoapps.com/p/ppu3nv)"],
+
+      [[],
+      "Amino [global](http://aminoapps.com/p/exaupd)"],
+
+      [['Usuarios'],
+      "Desarrollar un [concurso](http://aminoapps.com/p/fs7y84)"],
+
+      [['Usuarios', 'Consejos'],
+      "El [bloqueo](http://aminoapps.com/p/tb2796)"],
+
+      [['Usuarios',
+      'Consejos'], "El [flood](http://aminoapps.com/p/u58fy9)"],
+
+      [['Tutoriales',
+      'Usuarios'], "[Buscar a alguien](http://aminoapps.com/p/twbva3) en amino"],
+
+      [['Tutoriales',
+      'Contenido'],
+      "Haciendo tus [blogs](http://aminoapps.com/p/chyx6g) brillar"],
+
+      [['Usuarios', 'Consejos'],
+      "Lidiando con usuarios [victimistas](http://aminoapps.com/p/tqpd7o4)"],
+
+      [['Usuarios'],
+      "[Integración](http://aminoapps.com/p/zkp0fzhttp://aminoapps.com/p/zkp0fz) al staff"],
+
+      [['Usuarios'],
+      "Trabajar en [equipo](http://aminoapps.com/p/zz57fp)"],
+
+      [['Tutoriales'],
+      "Nuevo registro del [historial](https://aminoapps.com/c/lider-espanol/page/blog/6-nuevo-registro-de-historial-te-funcionara/3bpw_tBuwepXr7Peb16JozZov7XV0gnn)"],
+
+      [['Consejos'],
+      "Acomodar las [normas](https://aminoapps.com/c/lider-espanol/page/blog/cuando-acomodar-las-reglas/EDdB_tPuweql3VQW27P60pNravJZm3Qx)"],
+
+      [['Consejos'],
+      "Requisito importante al hacer [reclutamientos](https://aminoapps.com/c/lider-espanol/page/blog/requisito-importante-y-a-veces-ignorado-en-reclutamientos/rzql_Seu0ERne7bwMzDNzPnBNDQb3GGV)"],
+
+      [['Usuarios'],
+      "[Integración](https://aminoapps.com/c/lider-espanol/page/blog/interactuando-en-amino/B8Vw_twu5qbx5Zrk8rYwKg1EZBDv0zrB) en Amino"],
+
+      [['Tutoriales',
+      'Contenido'], "Utiliza tus [atribuciones](https://aminoapps.com/c/lider-espanol/page/blog/utiliza-tus-atribuciones-sabiamente/vK1W_Unu20b1Y0xGB0DkdbR4PpaeJam) sabiamente"],
+
+      [['Tutoriales',
+      'Consejos'], "[Reanimar](http://aminoapps.com/p/kgrox2) una comunidad"],
+
+      [[],
+      "Dirección y coordinación de [grupos](http://aminoapps.com/p/gz65hh)"],
+
+      [['Tutoriales',
+      'Usuarios', 'Consejos'], "Como [motivar](http://aminoapps.com/p/4k9i40k) a los usuarios"],
+
+      [['Tutoriales',
+      'Usuarios', 'Consejos'], "¿Cómo lidiar con la [denigración](http://aminoapps.com/p/7izn0vd)?"],
+
+      [['Tutoriales'],
+      "No más [anuncios](http://aminoapps.com/p/r9uf7k) forzados"],
+
+      [['Tutoriales', 'Consejos'],
+      "¿Quieres buenos [VIPs](http://aminoapps.com/p/rzgc3x)?"],
+
+      [[],
+      "Creación de [eventos](http://aminoapps.com/p/4whhqr)"],
+        
+      [['Tutoriales'],
+      "¿Cómo hacer [reclutamientos](http://aminoapps.com/p/oxd1d3)?"]
     ],
     [
-        [[], "Mandar [notificaciones](http://aminoapps.com/p/spgh1)"],
-        [[], "Modera [el Wiki](http://aminoapps.com/p/xn76ek) de tu comunidad"],
-        [[], "El menú de [moderación](http://aminoapps.com/p/n7voykl)"],
-        [[], "Usar el centro de [reportes](http://aminoapps.com/p/ks1mcjb)"],
-        [[], "Más [herramientas](http://aminoapps.com/p/jfrvrl) de moderación"],
-        [[], "Dar [títulos](http://aminoapps.com/p/88lha2) personalizados"],
-        [[], "[Destacar](http://aminoapps.com/p/gb3bv2) miembros"],
-        [[], "Organiza la [wiki](http://aminoapps.com/p/js69tb) de tu comunidad"],
-        [[], "El [historial](http://aminoapps.com/p/47gxg3) de moderación"]
+      [[], "Mandar [notificaciones](http://aminoapps.com/p/spgh1)"],
+      [[], "Modera [el Wiki](http://aminoapps.com/p/xn76ek) de tu comunidad"],
+      [[], "El menú de [moderación](http://aminoapps.com/p/n7voykl)"],
+      [[], "Usar el centro de [reportes](http://aminoapps.com/p/ks1mcjb)"],
+      [[], "Más [herramientas](http://aminoapps.com/p/jfrvrl) de moderación"],
+      [[], "Dar [títulos](http://aminoapps.com/p/88lha2) personalizados"],
+      [[], "[Destacar](http://aminoapps.com/p/gb3bv2) miembros"],
+      [[], "Organiza la [wiki](http://aminoapps.com/p/js69tb) de tu comunidad"],
+      [[], "El [historial](http://aminoapps.com/p/47gxg3) de moderación"]
     ],
     [
       [[], "Todo sobre [ACM](http://aminoapps.com/p/7qb0ae)"],

@@ -12,7 +12,7 @@ const default_menu = `
               <img src="assets/blogs.svg" />
               <p>Blogs</p>
           </a>
-          <a>
+          <a href="faq.html">
               <img src="assets/faq.svg" />
               <p>FAQ</p>
           </a>
@@ -34,7 +34,7 @@ const default_menu = `
 `
 
 const default_contact = `
-      <h4>Creado por: Leafy. Dev build: 0.0.6</h4>
+      <h4>Creado por: Leafy. Dev build: 0.0.8</h4>
       <div id="links">
         <a href="https://aminoapps.com/c/lider-espanol">Líder Amino</a>
         <a href="https://www.youtube.com/@aminoapps">Youtube</a>
@@ -60,13 +60,21 @@ function menuChange(type){
   };
   menuStatus = (menuStatus + 1) % 2;
   menuBar.classList.toggle("menuVisible")
+
+  const blurableAll = document.querySelectorAll(".blurable")
   switch(menuStatus){
-      case 0  : blurable.style.filter   = "blur(0px)";
-                blurable.style.opacity  = "100%";
+      case 0  :
+                for(let i = 0; i < blurableAll.length; i++){
+                  blurableAll[i].style.filter   = "blur(0px)";
+                  blurableAll[i].style.opacity  = "100%";
+                };
                 menuBar.style.width     = "0px";
                 break;
-      case 1  : blurable.style.filter = "blur(4px)";
-                blurable.style.opacity = "70%";
+      case 1  :
+                for(let i = 0; i < blurableAll.length; i++){
+                  blurableAll[i].style.filter = "blur(4px)";
+                  blurableAll[i].style.opacity = "70%";
+                };
                 menuBar.style.width     = "420px";
                 break;
   };

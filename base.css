@@ -13,6 +13,7 @@ html {
   --bg-col-1 : #8a42ec;
   --bg-col-2 : #dd9f88;
   --bg-col-3 : #333842;
+  --bg-col-4 : #444A59;
 
   --link-def : #ffffff;
   --link-vis : #000000;
@@ -28,7 +29,7 @@ html {
 body {
   background: var(--bg-init);
   animation-name: bg-col;
-  animation-duration: 4s;
+  animation-duration: 1.5s;
   animation-iteration-count: 1;
   font-family: 'Source Sans Pro', sans-serif;
   background: linear-gradient(135deg, var(--bg-col-1), var(--bg-col-2));
@@ -71,7 +72,6 @@ button{
 button:hover {
   transform: scale(1.2);
 }
-
 
 .menu{
   margin: 0px;
@@ -150,12 +150,12 @@ button:hover {
 }
 
 .menuLinkList p{
-    font-weight: 400;
-    color: white;
-    font-size: 40px;
-    margin: 0px;
-    padding: 0px;
-    text-align: left;
+  font-weight: 400;
+  color: white;
+  font-size: 40px;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
 }
 
 .littleInfo {
@@ -208,4 +208,74 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+
+.return{
+  width: 80%;
+  margin: 24px 10%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.return a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 8px;
+
+  margin: 0px 15%;
+}
+
+.return img {
+  width: 40px;
+}
+
+.return p {
+  font-size: 32px;
+  margin: 12px;
+}
+
+
+
+
+.topInfo{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#logoImage{
+  max-width: 320px;
+}
+
+.topInfo h1{
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin: 40px 0px 16px 0px;
+  letter-spacing: 3px;
+  font-size: 60px;
+  font-weight: lighter;
+}
+
+.topInfo p{
+  color: white;
+  font-size: 32px;
+  width: 80%;
+  margin: 24px 10% 8px 10%;
+  text-align: center;
+  font-weight: 400;
+}
+
+.information{
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }

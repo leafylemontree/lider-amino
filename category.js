@@ -2,7 +2,7 @@ let category    = parseInt(document.querySelector("p.ct").textContent, 10);
 const kwContainer = document.querySelector("#keywordSelector");
 
 const createButton = (dom, text, i) => {
-  dom.innerHTML += `<button class="kw-${i}">${text}</button>\n`
+  dom.innerHTML += `<button class="kw-${i} sc-btn">${text}</button>\n`
 }
 
 function refreshKW(){
@@ -14,15 +14,14 @@ function refreshKW(){
 
 refreshKW()
 
-function refreshKeywords(){
 const kwButtons = document.querySelector("#keywordSelector")
 kwButtons.addEventListener("click", ()=>{
     button = document.querySelector("#keywordSelector button:hover")
     button.classList.toggle("btn-pressed")
-  })
-}
+})
 
-document.querySelector(".sc-btn").addEventListener("click", ()=>{
+
+const prepareSearch = ()=>{
   button = document.querySelectorAll(".btn-pressed")
   let kwList = []
   for(let j = 0; j < button.length; j++){
@@ -31,7 +30,23 @@ document.querySelector(".sc-btn").addEventListener("click", ()=>{
 
   const prompt = document.querySelector("input.search").value
   refreshBlogs(prompt, null)
+}
+
+
+document.querySelector(".sc-btn").addEventListener("click", ()=>{
+  prepareSearch();
 });
+
+document.addEventListener("keydown", ()=>{
+  switch(event.keyCode){
+      case 13:  prepareSearch();
+                break;
+      case 17:  menuChange(0);
+                break;
+  };
+})
+
+
 
 // Blogs
 
@@ -52,7 +67,7 @@ function refreshBlogs(searchQuery, keywords){
       let tags    = blogs[category][i][0];
 
       if (!!searchQuery){
-        let blogContentUpper = blog.toUpperCase()
+        let blogContentUpper = blog.toUpperCase().replace(/\((http).*\)|[%!¡?¿\[\]\(\)<>]/gi, "")
         if (!blogContentUpper.includes(searchQueryUpper)){
           continue;
         };
@@ -76,7 +91,7 @@ function refreshBlogs(searchQuery, keywords){
 
     newHTML.sort((a,b)=>{
       function separate(s){
-        return s.replace(/[%[!¡?¿\]]|<(?:.*?)>/g, '').trim()
+        return s.replace(/<(?:.*?)>|[%!¡?¿\[\]\(\)<>]/g, '').trim()
       };
       return separate(a).localeCompare(separate(b))
 
@@ -84,11 +99,11 @@ function refreshBlogs(searchQuery, keywords){
 
     oldChar = ''
     for(let i = 0; i < newHTML.length; i++){
-        let char = newHTML[i].replace(/[%[!¡?¿\]]|<(?:.*?)>/g, '').trim()[0];
+        let char = newHTML[i].replace(/<(?:.*?)>|[%!¡?¿\[\]\(\)<>]/g, '').trim()[0];
         if (char != oldChar){
             blogList.innerHTML += `<h4>${char}</h4>\n<div class="separatorBlog"></div>\n`;
         };
-        blogList.innerHTML += `<p>${newHTML[i]}</p>\n`;
+        blogList.innerHTML += `<p>${newHTML[i]}</p>\n`
         oldChar = char;
     };
 }
@@ -100,7 +115,7 @@ refreshBlogs(null, null)
 
 
 
-
+/*
 
 document.querySelector(".devDebug button#decrease").addEventListener("click", ()=>{
   category -= 1;
@@ -118,3 +133,4 @@ document.querySelector(".devDebug button#increase").addEventListener("click", ()
   refreshKW()
 
 })
+*/
