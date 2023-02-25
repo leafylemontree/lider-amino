@@ -341,7 +341,7 @@ const blogs = [
       [[], "La [caída](https://aminoapps.com/c/lider-espanol/page/blog/eqgs54nvgnh6pjeo6lfq7yewji/xewV_f2u5rYJpbdLZVaZ86bb2oB8p6X) tras el éxito"],
       [[], "Staff con [buenos valores](http://aminoapps.com/p/e2qal4)"],
       [[], "¿Cuándo [dejar](https://aminoapps.com/c/lider-espanol/page/blog/cuando-dejar-un-staff/RbR1_twuWNZvbw8GDXnoglW675VPrrwx) de ser staff?"],
-      [[], "Mitos sobre el [liderazgo](https://docs.google.com/spreadsheets/d/1NIpdoq8hWIY802Se48yz8weanyq-lM91JVwzSNcJKtc/edit#gid=0)"],
+      [[], "Mitos sobre el [liderazgo](http://aminoapps.com/p/uj4udl)"],
       [[], "Un staff [tóxico](http://aminoapps.com/p/d1knidl)"],
       [[], "Puntos ciegos del [liderazgo](http://aminoapps.com/p/62v3me)"],
       [[], "Guia para [curadores](http://aminoapps.com/p/37am3pk) principiantes"],
