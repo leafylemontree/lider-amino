@@ -8,11 +8,4 @@ const search = () => {
 };
 
 button.addEventListener("click", search);
-document.addEventListener("keydown", ()=>{
-  switch(event.keyCode){
-      case 13:  search();
-                break;
-      case 17:  menuChange(0);
-                break;
-  };
-});
+keyListener(search, null, 13)

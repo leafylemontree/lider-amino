@@ -15,6 +15,7 @@ let allBlogs = [[], 0]
 function refreshKW(){
   getCategory();
   kwContainer.innerHTML = ""
+  return;
   if(category == -1){ return; };
   for(let i = 0; i < keywords[category].length; i++){
     createButton(kwContainer, keywords[category][i], i);
@@ -48,14 +49,7 @@ document.querySelector(".sc-btn").addEventListener("click", ()=>{
   prepareSearch();
 });
 
-document.addEventListener("keydown", ()=>{
-  switch(event.keyCode){
-      case 13:  prepareSearch();
-                break;
-      case 17:  menuChange(0);
-                break;
-  };
-})
+keyListener(prepareSearch, null, 13);
 
 
 

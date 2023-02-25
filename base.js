@@ -34,7 +34,7 @@ const default_menu = `
 `
 
 const default_contact = `
-      <h4>Creado por: Leafy. Dev build: 0.0.10</h4>
+      <h4>Creado por: Leafy. Dev build: 0.1.0</h4>
       <div id="links">
         <a href="https://aminoapps.com/c/lider-espanol">Líder Amino</a>
         <a href="https://www.youtube.com/@aminoapps">Youtube</a>
@@ -88,3 +88,39 @@ menuToggle.addEventListener("click", ()=>{
 blurable.addEventListener("click", ()=>{
   menuChange(1);
 });
+
+
+// Key Listener
+
+let keyContext = [];
+
+function keyListener(fn, args, key){
+  for(let i = 0; i < keyContext.length; i++){
+    if(keyContext[i][1] != key){ continue; };
+    throw new Error("Key already defined!")
+  };
+  keyContext.push([fn, args, key]);
+}
+
+document.addEventListener("keydown", ()=>{
+  const key      = event.keyCode
+  let   executed = false;
+  for(let i = 0; i < keyContext.length; i++){
+    let func = keyContext[i][0];
+    let args = keyContext[i][1];
+    let psky = keyContext[i][2];
+    if(psky != key){ continue; };
+    try{
+      func(args);
+      executed = true;
+    } catch(e) {
+      executed = null;
+      console.error(e)
+    };
+  };
+  if(!executed){
+    // console.log(`No key found for ${key}`)
+  }
+});
+
+keyListener(menuChange, 0, 17);

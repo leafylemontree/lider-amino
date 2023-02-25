@@ -113,6 +113,7 @@ img.rightImage {
 
 .tema a{
   min-height: 108px;
+  display: none;
 }
 
 .tema a:nth-child(even){

@@ -192,7 +192,7 @@ const blogs = [
 
       [[],
       "Creación de [eventos](http://aminoapps.com/p/4whhqr)"],
-        
+
       [['Tutoriales'],
       "¿Cómo hacer [reclutamientos](http://aminoapps.com/p/oxd1d3)?"]
     ],
@@ -452,7 +452,8 @@ const blogs = [
       [[], "La importancia del saber [argumentar](https://aminoapps.com/c/lider-espanol/page/blog/la-importancia-de-saber-argumentar/Pn7m_umud8qqMPgrj82nrpErB4ommYQ6)"],
       [[], "[Criterio propio](https://aminoapps.com/c/lider-espanol/page/blog/el-criterio-propio-vs-la-presion-social/QEdl_iXuePwJ3qP642x2ejeQ6vZaPKWd) vs opinión popular"],
       [[], "Discusiones [interminables](https://aminoapps.com/c/lider-espanol/page/blog/discusiones-interminables-en-nuestras-comunidades/pYZ4_tQuEZYpMDlW3RonQKBLXLznDYqx)"],
-      [[], "Reflexiones de Panda [parte 1](https://aminoapps.com/c/lider-espanol/page/blog/reflexionando-con-sr-panda/KQPg_CMuRjVNDPRlKWLla3PVj0D8jlb4) y [parte 2](http://aminoapps.com/p/2k1kv9)"],
+      [[], "Reflexiones de Sr Panda [parte 1](https://aminoapps.com/c/lider-espanol/page/blog/reflexionando-con-sr-panda/KQPg_CMuRjVNDPRlKWLla3PVj0D8jlb4)"],
+      [[], "Reflexiones de Sr Panda [parte 2](http://aminoapps.com/p/2k1kv9)"],
       [[], "Los [títulos](https://aminoapps.com/c/lider-espanol/page/blog/sobre-los-titulos-de-amino/wdb6_uoupad1LeQY4vo4kDEm3YwRg2nj) en Amino"],
       [[], "Los [bots](https://aminoapps.com/c/lider-espanol/page/blog/sobre-los-bots-en-amino/vK1W_UnuwPxw2MLrZmNejq1XGGmnXqnY) en Amino"],
       [[], "[Desmotivación](http://aminoapps.com/p/mn0efb)"],
