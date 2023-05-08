@@ -1,0 +1,52 @@
+.article {
+  margin-top: 72px;
+  margin-bottom: 144px;
+  display: flex;
+  flex-direction: column;
+}
+
+.article a{
+    border-style: solid;
+    border-color: white;
+    border-radius: 20px;
+    border-width: 2px;
+
+    width: 80%;
+    left: 10%;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 216px auto;
+
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.article a img{
+  max-height: 160px;
+  max-width: 160px;
+  position: relative;
+  margin: 24px;
+
+
+}
+
+.article div.article_text {
+  margin: 24px;
+}
+
+.article_text h2{
+  margin: 16px;
+  font-size: 32px;
+  min-height: 64px;
+  font-weight: 400;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.article_text p{
+  font-size: 24px;
+  min-height: 64px;
+  font-weight: 100;
+  font-family: 'Source Sans Pro', sans-serif;
+}

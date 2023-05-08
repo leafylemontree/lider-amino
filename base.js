@@ -8,6 +8,10 @@ const default_menu = `
               <img src="assets/home.svg" />
               <p>Inicio</p>
           </a>
+          <a href="resume.html">
+              <img src="assets/resume.svg" />
+              <p>Resumen</p>
+          </a>
           <a href="blogs.html">
               <img src="assets/blogs.svg" />
               <p>Blogs</p>
@@ -34,7 +38,7 @@ const default_menu = `
 `
 
 const default_contact = `
-      <h4>Creado por: Leafy. Dev build: 1.0.0. Actualizada: 25 de febrero de 2023</h4>
+      <h4>Creado por: Leafy. Dev build: 1.0.1. Actualizada: 8 de mayo de 2023</h4>
       <div id="links">
         <a href="https://aminoapps.com/c/lider-espanol">Líder Amino</a>
         <a href="https://www.youtube.com/@aminoapps">Youtube</a>
